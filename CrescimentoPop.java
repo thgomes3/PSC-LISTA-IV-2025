@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CrescimentoPopulacional {
+public class CrescimentoPop { 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int populacaoA, populacaoB, anos;
