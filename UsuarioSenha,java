@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class UsuarioSenha {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String nomeUsuario, senha;
+
+        while (true) {
+            System.out.print("Digite o nome de usuário: ");
+            nomeUsuario = scanner.nextLine();
+
+            System.out.print("Digite a senha: ");
+            senha = scanner.nextLine();
+
+            if (nomeUsuario.equals(senha)) {
+                System.out.println("Erro: A senha não pode ser igual ao nome de usuário. Tente novamente.");
+            } else {
+                System.out.println("Cadastro realizado com sucesso!");
+                break;
+            }
+        }
+    }
+}
